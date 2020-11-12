@@ -1,0 +1,16 @@
+	Try
+            alas = Me.txtAlas.Text
+            tinggi = Me.txtTinggi.Text
+
+            Me.txtLuas.Text = luasSegitiga(alas, tinggi)
+        Catch ex As Exception
+            ' MsgBox(ex.Message)
+            MsgBox("Error dalam menghitung", MsgBoxStyle.Information)
+        End Try
+
+    Public alas As Integer
+    Public tinggi As Integer
+
+    Public Function luasSegitiga(ByVal a As Integer, ByVal b As Integer)
+        Return (alas * tinggi) / 2
+    End Function
